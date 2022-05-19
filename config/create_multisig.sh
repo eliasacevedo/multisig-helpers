@@ -1,3 +1,3 @@
-source config_blockchain.sh
+source ../variables.sh
 
-echo $ChainId
+$Binary keys add $MultisigWalletName --multisig "$ListWalletsName" --multisig-threshold $MultisigThreshold

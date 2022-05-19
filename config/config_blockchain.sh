@@ -1,3 +1,1 @@
 source ../variables.sh
-
-$Binary 
