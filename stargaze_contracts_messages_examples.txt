@@ -1,0 +1,52 @@
+<--------------- Whitelist --------------->
+
+"{
+  "members": [],
+  "start_time": "1657573200000000000",
+  "end_time": "1657746000000000000",
+  "unit_price": {
+    "amount": "50000000",
+    "denom": "ustars"
+  },
+  "per_address_limit": 5,
+  "member_limit": 100
+}"
+
+<--------------- Whitelist adding members --------------->
+
+{
+  "add_members": {
+    "to_add": [
+      "stars13nlvf990h6394hrmurucf807rh6glpartrlqg6"
+    ]
+  }
+}
+
+<--------------- Minter --------------->
+{
+  "base_token_uri": "",
+  "num_tokens": 10000,
+  "sg721_code_id": 1,
+  "sg721_instantiate_msg": {
+    "name": "Collection",
+    "symbol": "SYM",
+    "minter": "Address",
+    "collection_info": {
+      "creator": "Address",
+      "description": "Collection",
+      "image": "",
+      "royalty_info": {
+        "payment_address": "Address",
+        "share": "0.1"
+      }
+    }
+  },
+  "per_address_limit": 50,
+  "start_time": "1652547000000000000",
+  "unit_price": {
+    "amount": "50000000",
+    "denom": "ustars"
+  }
+}
+
+<--------------- Minter --------------->
