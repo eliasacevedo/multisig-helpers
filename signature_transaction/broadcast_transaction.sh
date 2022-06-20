@@ -1,3 +1,3 @@
 source ../variables.sh
 
-$Binary tx broadcast $TxPath --chain-id $ChainId
+$Binary tx broadcast $TxPath --chain-id $ChainId --node $Node

@@ -1,3 +1,3 @@
 source ../variables.sh
 
-starsd tx sign --from $(starsd keys show -a $NormalWalletName) --multisig $(starsd keys show -a $MultisigWalletName) tx.json --sign-mode amino-json --chain-id $ChainId >> tx-$NormalWalletName.json
+$Binary tx sign --from $(starsd keys show -a $NormalWalletName) --multisig $(starsd keys show -a $MultisigWalletName) $TransactionFileNameInput --sign-mode amino-json --chain-id $ChainId --node $Node >> tx-$NormalWalletName.json

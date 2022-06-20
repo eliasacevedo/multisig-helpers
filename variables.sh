@@ -1,18 +1,18 @@
 # Blockchain configuration
 Binary=starsd
-RPCEndpoint=https://rpc.stargaze-apis.com
-# RPCEndpoint=https://rpc.double-double-1.stargaze-apis.com
-RPCPort=433
+# RPCEndpoint=https://rpc.stargaze-apis.com # Mainnet
+RPCEndpoint=https://rpc.double-double-1.stargaze-apis.com # Testnet
+RPCPort=443
 Node=$RPCEndpoint:$RPCPort
-ChainId=stargaze-1
-# ChainId=localnet-1
+# ChainId=stargaze-1 #Mainnet
+ChainId=double-double-1 # Testnet
 
 # Wallets configuration
-NormalWalletName=test222
-NormalWalletSecp256k1Address=AtObiFVE4s+9+RX5SP8TN9r2mxpoaT4eGj9CJfK7VRzZ # You can get this in https://ping.pub/, search your address and seek in the bottom.
+NormalWalletName=name1
+NormalWalletSecp256k1Address="" # You can get this in https://ping.pub/, search your address and seek in the bottom.
 
 # Multisig wallets configuration
-ListWalletsName=cry-t,cry-h,cry-t2 # List of wallets will be part of multisig wallet
+ListWalletsName=name1,name2,name3 # List of wallets will be part of multisig wallet
 MultisigWalletName=multi
 MultisigThreshold=2
 
@@ -26,20 +26,21 @@ Quantity=10000000
 Coin=ustarx
 
 # Transaction filename
-TransactionFileNameInput=tx.json
-TransactionFileNameOutput=tx_signed.json
-TxPath=tx
-TxWillMerge=
+TransactionFileNameInput="tx.json"
+TransactionFileNameOutput="tx_signed.json"
+TxPath=""
+TxWillMerge=""
 
 # Contracts variables
-ContractCodeId=1
+ContractCodeId=0
 GasPrices=0ustars
-GasValue=600000
+GasValue=0
+Amount=0ustars
 ContractLabel="Contract name"
 ContractAddress=
 InstantiateMessage=$(cat <<EOF
 {
-    #JSON message is here
+  #JSON message is here
 }
 EOF
 )
